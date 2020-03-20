@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    app:rowCount="2"
+    app:orientation="horizontal" >
+
+    <FrameLayout
+        android:background="#ff0000"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:onClick="dial"
+                android:src="@drawable/ic_action_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/call"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Call"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#22ff00">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sms"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:onClick="text"
+                android:src="@drawable/ic_action_sms" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sms"
+                android:layout_centerHorizontal="true"
+                android:text="SMS"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#ffee00"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:onClick="mail"
+                android:src="@drawable/ic_action_mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#ffee00"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:onClick="maps"
+                android:src="@drawable/ic_action_map" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map"
+                android:layout_centerHorizontal="true"
+                android:text="Maps"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        android:background="#22ff00"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/web"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:onClick="web"
+                android:src="@drawable/ic_action_web" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/web"
+                android:layout_centerHorizontal="true"
+                android:text="Website"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="78dp"
+        android:background="#ff0000"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/wa"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:onClick="wa"
+                android:src="@drawable/icon_wa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="WhatsApp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#FFFFFF"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:text="About"
+                android:onClick="tentang"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#FFFFFF"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:text="Bonus"
+                android:onClick="tambahan"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.gridlayout.widget.GridLayout>
