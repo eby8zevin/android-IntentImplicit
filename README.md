@@ -1,5 +1,7 @@
 # android-updateimplicit
-Training Implicit-Intent Android Studio UPDATE 
+Training Implicit-Intent Android Studio UPDATE
+
+Fitur Intent Implicit :
 1. Dial
 2. SMS
 3. WEB
