@@ -1,5 +1,5 @@
-# android-updateimplicit
-Implicit Intents - Android Studio UPDATE
+# android-UpdateImplicit
+Implicit Intents - Android Studio **UPDATE**
 
 The Features :
 - Dial
